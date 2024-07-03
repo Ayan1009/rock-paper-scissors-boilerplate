@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="score-display">
+            <span id="player-score">0</span>
+            -
+            <span id="computer-score">0</span>
+        </div>
+        <div class="game-content">
+            <div class="player-section">
+                <p>you</p>
+                <img src="./assets/paper-hand.png" alt="Player Choice" id="player-choice">
+                <div class="choice-buttons">
+                    <img src="./assets/paper-logo.png" alt="Paper" id="paper-button">
+                    <img src="./assets/rock-logo.png" alt="Rock" id="rock-button">
+                    <img src="./assets/scissors-logo.png" alt="Scissors" id="scissors-button">
+                </div>
+            </div>
+            <div class="versus-section">
+                <img src="./assets/vs.png" alt="VS">
+            </div>
+            <div class="computer-section">
+                <p>comp</p>
+                <img src="./assets/rock-hand.png" alt="Computer Choice" id="computer-choice">
+            </div>
+        </div>
+        <div class="game-result">
+            <span id="result-message"></span>
+            <button id="play-again-button">Play again</button>
+        </div>
+    </div>
+    <script src="./game.js"></script>
+</body>
+
+</html>
